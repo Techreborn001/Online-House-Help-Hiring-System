@@ -37,7 +37,7 @@ const pool = new Pool({
 });
 
 
-app.get("/Landing_Page", async (req, res) => {
+app.get("/index", async (req, res) => {
   res.render("index");
 });
 
