@@ -1,0 +1,915 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+ 
+body{
+   margin: 0px !important;
+   background: #F3FAFA;
+   font-size: medium;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    display:flex;
+    width: 100%;
+
+    /* position: fixed; */
+    top:0;
+    left:0; 
+    background: white;
+    border-bottom: 5px solid whitesmoke;
+    
+    box-sizing: border-box;
+    padding:1.5rem 9%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;     
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: 600;
+    cursor:default;
+    text-decoration: none;
+} 
+
+.navbar {
+    width: 70%;
+    font-size: 1rem;
+    margin-left: 4rem;
+    transition: .3s;
+    text-decoration: none;
+
+    margin: 0px !important;
+}
+
+.a{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.navabout{
+    text-decoration: none; 
+    color:#023d51;
+    margin-left: 29%;
+    margin-right: 35%;
+}
+
+/*=================== Buttons inside the Modal Dialog Box =================  */
+.sign-in-btn{
+  color:#023d51;
+  width: 12% !important; 
+  margin: 0 !important;
+  font-weight: 700 !important;
+  background: transparent !important; 
+  
+  border-color:#023d51 !important;
+}
+
+.modal-header{
+    border: none;
+}
+
+.sign-in-btn:hover{
+  color:white;
+  font-weight: 700;
+  border-color:#023D51 !important;
+  background: #023D51 !important;
+}
+
+.nav-signin{
+  background: #023D51;
+  border: none !important;
+}
+
+.nav-signin:hover {
+  color: green !important;
+  background: none !important; 
+}
+
+/*===================Sign-in Modal Dialog Form =================  */
+.form1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 30px;
+    width: 450px;
+    border-radius: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  ::placeholder {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .form1 button {
+    align-self: flex-end;
+  }
+  
+  .flex-column > label {
+    color: #151717;
+    font-weight: 600;
+  }
+  
+  .inputForm {
+    border: 1.5px solid #ecedec;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .input1 {
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .input1:focus {
+    outline: none;
+  }
+  
+  .inputForm:focus-within {
+    border: 1.5px solid #2d79f3;
+  }
+  
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  
+  .flex-row > div > label {
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+  }
+  
+  .span {
+    font-size: 14px;
+    margin-left: 5px;
+    color: #2d79f3;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .button-submit {
+    margin: 20px 0 10px 0;
+    background-color: #151717;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .p {
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .btn {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    gap: 10px;
+    border: 1px solid #ededef;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .btn:hover {
+    border: 1px solid #2d79f3;
+  }
+
+#linkedIn-icon-btn h6{
+     padding-top: 6%;
+}
+
+.linkedin-logo{
+    width: 25px;
+    height: 25px;
+    mask-repeat: no-repeat;
+    /* background-color: red; */
+    background-size: 25px 25px;
+    background-image: url("/assets/logos/linkedin\ icon\ 2.png") ;
+}
+
+/*===================Sign-Up Modal Dialog Form =================  */
+.signup2-applybtn{
+   color: Blue;
+   text-decoration: underline;
+   border: none;
+   outline: none; 
+   background: none;
+}
+
+.modal2-modalbody{
+   display: flex;
+}
+
+#modal1 .modal-header  button{
+    border: none !important;
+    outline: none !important;
+}
+
+.signup2-applybtn-signUpbtn{
+   color: Blue;
+   text-decoration: underline;
+   border: none;
+   outline: none; 
+   background: none;
+}
+
+.form2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+
+     /* background: red; */
+  }
+  
+  .title {
+    font-size: 28px;
+    color: royalblue;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: royalblue;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: royalblue;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+ .signin {
+    color:  #203D51;
+    font-size: 14px;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: royalblue;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .flex {
+    display: flex;
+    width: 98%;
+    gap: 2%;
+    /* background: red; */
+  }
+
+  .flex label {
+    width: 49%
+  }
+  
+  .form2 label {
+    position: relative;
+  }
+  
+  .form2 label .modal2-input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+    font-weight: 400;
+    color: rgb(48, 47, 47)
+  }
+     
+  .form2 label .modal2-input:placeholder-shown {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form2 label .modal2-input:focus ,.form label .modal2-input:valid {
+    top: 30px;
+    font-size: 0.9em;
+  }
+ 
+  .form2 label .modal2-input:focus,.form2 label .modal2-input:hover{
+    border-color: #1E95F7;
+  }
+
+  .submit {
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+  .submit:hover {
+    background-color: rgb(56, 90, 194);
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+
+ .modal2-radio-btns{
+    width: 90%;
+    display: flex;
+    gap: 10%; 
+    margin-bottom: 5%;
+ }
+ 
+
+/*=================Search Section =================== */
+
+#searchSection{
+    display: grid;
+    width: 100%;
+    height: 800px;
+    grid-template-columns: 30% 60%;
+    grid-template-rows: 800px;
+    gap: 10%;
+    /* padding-top: 7%; */
+    padding-left: 5%;
+    background: #EFFBF2;
+    /* background-color: red; */
+}
+
+#picBox{
+    display: grid;
+    width: 97%;
+    height: 80%;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 150px 100px 150px 100px 150px ;
+    gap: 10px;
+    padding-top: 5%;
+    
+    
+}
+
+#picBox *{
+  border-radius: 10px;
+}
+ 
+ 
+#pic1{
+    mask-repeat: no-repeat;
+    background-size:230px 150px;
+    background-image: url("/assets/landing_page_pics/h.help\ -\ doing\ chores.jpg");
+}
+
+#pic2{
+    mask-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/assets/landing_page_pics/H.Help\ -\ M-F1.jpg");
+     
+    grid-row: span 2;
+}
+
+#pic3{
+    mask-repeat: no-repeat;
+    background-size:  280px 260px;
+    background-image: url("/assets/landing_page_pics/h\ help\ washing\ clothes.jpg");
+
+    grid-row: span 2;
+}
+
+#pic4{
+    mask-repeat: no-repeat;
+    background-size: 250px 260px  ;
+    background-image: url("/assets/landing_page_pics/house\ help\ 6.jpg");
+
+    grid-row: span 2;
+}
+
+#pic5{
+    mask-repeat: no-repeat;
+    background-size: 250px 260px  ;
+    background-image: url("/assets/landing_page_pics/house\ help\ 7.jpg");
+
+    grid-row: span 2;
+}
+
+#pic6{
+    mask-repeat: no-repeat;
+    background-size: 227px 150px;  
+    background-image: url("/assets/landing_page_pics/h\ help\ cooking.jpg");
+}
+ 
+
+#searchArea{
+    width: 100%;
+    height: 690px;
+
+    /* background: yellowgreen !important; */
+}
+
+.searchAreatext{
+    padding-top: 15%;
+}
+
+ .h1{
+    color: #023D51;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.h2{
+    color: #023D51;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.span-job{
+    color: #3B82F6
+}
+
+.h3{
+    color: #023D51;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.searchAreatext-paragraph {
+    width: 90%;
+    color: #203D51;
+    margin-top: 5%;
+    font-size: 25px;
+    /* background: #1E95F7; */
+}
+
+.searchArea-searchbutton{
+    margin-top: 7%;
+}
+
+.search-box{
+     margin-top: 4%;
+}
+
+/* From Uiverse.io by krlozCJ */ 
+.container {
+   position: relative;
+    --size-button: 40px;
+    color: white;
+    display: flex;
+
+    /* background: red; */
+  }
+  
+  .input-searchbtn {
+   
+    padding-left: var(--size-button);
+    height: var(--size-button);
+    font-size: 15px;
+    border: none;
+    color: #fff;
+    outline: none;
+    width: var(--size-button);
+    transition: all ease 0.3s;
+    background-color: #023d51;
+    box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+
+  .input-searchbtn:focus,
+  .input-searchbtn:not(:invalid) {
+    width: 70% !important;
+    cursor: text;
+    background: white;
+    /* box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e; */
+  }
+  
+  .input-searchbtn:focus + .icon,
+  .input-searchbtn:not(:invalid) + .icon {
+    pointer-events: all;
+    cursor: pointer;
+    color: black;
+  }
+
+.input-searchbtn:focus {
+    width: 70% !important;
+     color: black;
+     background: white;
+}
+
+.input-searchbtn:focus .icon{
+    color: black;
+    background: white;
+}
+
+   
+  .container .icon {
+    position: absolute;
+    width: var(--size-button);
+    height: var(--size-button);
+    top: 0;
+     
+    padding: 8px;
+    pointer-events: none;
+  }
+  
+  .container .icon svg {
+    width: 100%;
+    height: 100%;
+  }
+
+
+/*================== User Manual section =======================*/
+#userManual{
+   padding-left: 5%;
+    
+}
+
+.usermanual-title{ 
+    padding-top: 5%;
+    margin-bottom: 3%;
+}
+
+#userManualpics{
+    width: 29%;
+    height: 450px;
+    mask-repeat: no-repeat;
+    background-size:  400px 450px ; 
+    background-image: url("/assets/landing_page_pics/usermanual\ pic.png");
+
+    float: left;
+}
+
+.userManual-xplaination{
+  margin-left: 40%;  
+}
+
+.userManual-xplaination h4, .userManual-xplaination  {
+   color: #203D51;
+}
+
+.userManual-xplaination  {
+    color: #203D51;
+    font-weight: 400;
+ }
+
+
+
+.userManual-xplaination-applyButton {
+    width: 30%;
+    height: 50PX;
+    color: white;
+    font-weight: 800;
+    margin-left: 60%;
+    margin-top:  12%;  
+    border-radius: 10px;
+    background: #00567C;
+  }
+
+.userManual-xplaination-applyButton:hover {
+   background: #023D51;
+}
+
+
+/*==================Why choose us Section==================*/
+
+#whyChooseUs{
+    clear:  both !important;
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-top: 3%;
+    
+    display: grid;
+    grid-template-columns: 30% 30% 30% ;
+    grid-template-rows: 50px 400px 250px;
+    gap: 50px;
+    
+    /* background-color: black; */
+}
+
+.whyChooseUs-title{
+    width: 100% ;
+    grid-column: span 3;
+}
+
+.reason1{
+      
+}
+
+.subre-1{
+    height: 200px;
+    text-align: center;
+    align-content: center;
+    background-color:#D1E9F6; 
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.subre-1h1{
+    
+}
+
+.subre-1h2{
+    text-decoration: none;
+}
+
+.reason1 h4{
+    color:#203D51;
+}
+
+.reason1 p{
+    color:#203D51;
+    margin-top: 4%;
+}
+
+.reason2{
+    
+}
+
+.subre-2{
+    height: 200px;
+    text-align: center;
+    align-content: center;
+    background-color:#D1E9F6; 
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.reason2 p{
+    color:#203D51;
+    margin-top: 11%;
+}
+
+.reason3{
+    /* background-color: green;   */
+}
+
+.subre-3{
+    height: 200px;
+    text-align: center;
+    align-content: center;
+    background-color:#D1E9F6;
+    border-radius: 7px; 
+    margin-bottom: 20px;
+}
+
+.reason3 p{
+    color:#203D51;
+    margin-top: 4%;
+}
+
+.reason1 h4, .reason2 h4, .reason3 h4 {
+    color:#023D51;
+    font-size: 1.4rem;
+}
+
+.numericalstats{
+    width: 60%;
+    color: white;
+    text-align: center;
+    align-content: center;
+  
+    margin-left: 19%;
+    grid-column: span 3;
+    background: #023D51;
+    border-radius: 10px;
+    
+}
+
+.numericalstats-title{
+    margin-bottom: 25px;
+    font-weight:bold;
+}
+
+.statsBox{
+   width: 90%;
+   height: 150px;
+
+   display: grid;
+   grid-template-columns: 33% 33% 34%;
+   grid-template-rows:100%;
+  
+   
+   margin-left: 5%;
+   align-content: center;
+
+   background:black;
+   border-radius: 10px;
+}
+
+.statsBox h2{
+    color: blue;
+}
+
+.statsBox h4{
+   color: grey !important;
+   font-weight: 200;
+}
+
+.numJobs{
+   margin-right: 2%;
+   align-content: center;
+   background: white;
+}
+
+.numemployers{
+    margin-right: 2%;
+    align-content: center;
+    background: white;
+}
+
+.numUsers{
+    align-content: center;
+    background: white;
+}
+
+
+/*====================Section Test Employers===================*/
+#verifiedemployers{
+  width: 100%;
+  height: 800px;
+  color: white;
+  font-weight: 400;
+  margin-top: 6%;
+  
+  padding-top: 100px !important;
+  background: #1E95F7;
+   
+}
+
+.verifiedemployers-text {
+    font-size: 1rem;
+    margin-left: 7%;
+}
+
+.verifiedemployers-text h4{
+    font-size: 1.7rem;
+    font-weight: 700;
+    
+}
+
+.verifiedemployers-text p{
+    font-size: 1.5em;  
+}
+
+.carousel-inner{
+    width: 90%;
+    margin-top: 6%;
+    margin-left: 70px;
+}
+
+/*==================== Employees Testimonials =================== */
+
+.employees_testimonials{
+   display: grid;
+   width: 90%;
+   height: 500px;
+   grid-template-columns: 30% 30% 30% ;
+   grid-template-rows: 400px;
+   gap: 50px;
+   margin-top: 50px;
+   margin-left:  6%;
+   
+   /* background: red; */
+}
+
+#testemployees h4{
+    font-size: 1.7rem;
+    color: #023D51;
+    font-weight: 700;
+    margin-top: 7%;
+    padding-left: 8%;
+}
+
+.testemployees1{
+    background: #EDF0ED;
+    border-radius: 15px;
+}
+
+.image-1{
+    width: 200px;
+    height: 150px;
+    margin-top: 10%;
+    margin-left: 23%;
+    background-size: 200px 150px;
+    background-image: url("/assets/H.Help-testimonials-pics/H.Help-test1.jpg");
+    border-radius: 100%;
+}
+
+.testemployees1 h5{
+    padding-top: 2%;
+    padding-left: 35%;
+    margin-bottom: 20px;   
+}
+
+.employee1{ 
+    border-radius: 10px;
+}
+
+.testemployees2{
+    background: #EDF0ED;
+    border-radius: 15px;
+}
+
+.image-2{
+    width: 200px;
+    height: 150px;
+    margin-top: 10%;
+    margin-left: 23%;
+    background-size: 200px 150px;
+    background-image: url("/assets/H.Help-testimonials-pics/H.Help-test2.jpg");
+    border-radius: 100%;
+}
+
+ 
+
+.employee2{
+    background: #EDF0ED;
+    border-radius: 10px;
+}
+
+.testemployees2 h5{
+    padding-top: 2%;
+    padding-left: 35%;
+    margin-bottom: 20px;   
+}
+
+.testemployees3{
+    background: #EDF0ED;
+    border-radius: 15px;
+}
+
+.employee3{
+    background: #EDF0ED;
+    border-radius: 10px;
+}
+
+.image-3{
+    width: 200px;
+    height: 150px;
+    margin-top: 10%;
+    margin-left: 23%;
+    background-size: 200px 150px;
+    background-image: url("/assets/H.Help-testimonials-pics/H.Help-test3.webp");
+    border-radius: 100%;
+}
+
+.testemployees3 h5{
+    padding-top: 2%;
+    padding-left: 35%;
+    margin-bottom: 20px;   
+}
+
+ 

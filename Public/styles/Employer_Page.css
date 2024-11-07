@@ -1,0 +1,734 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+ 
+body{
+  margin: 0px !important;
+  background: #F3FAFA;
+  font-size: medium;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+header{
+    display:flex;
+    width: 100%;
+
+    /* position: fixed; */
+    top:0;
+    left:0; 
+    background: white;
+    border-bottom: 5px solid whitesmoke;
+    
+    box-sizing: border-box;
+    padding: 1.5rem 4% 1.5rem 6%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;     
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: 600;
+    cursor:default;
+    text-decoration: none;
+    margin-right: 8%;
+} 
+
+.navbar {
+    width: 100%;
+    font-size: 1rem;
+    margin-left: 10rem;
+    transition: .3s;
+    text-decoration: none;
+    margin: 0px !important;
+}
+ 
+.navblog{
+    text-decoration: none; 
+    color:#023d51;
+}
+
+.navexplore{
+  text-decoration: none; 
+  color:#023d51;
+}
+
+#view_Applicants_btn{
+  color: #023d51;
+  font-weight: 700 !important;
+  background: none;
+  border: none;
+}
+
+
+#view_Applicants_btn:hover{
+  color: white;
+  border: none;
+  background: #3B82F6;
+}
+
+
+
+.postjob-btn{
+  color: #023d51;
+  width: 10%;
+  height : 37px;
+  font-weight: 700;
+  background: none;
+  border: none;
+  border-radius: 7px;
+}
+
+.postjob-btn:hover{
+   color: white;
+   border: none;
+   background: #3B82F6;
+}
+
+
+
+.employer_name_profile_Area{
+   display: inline-flex;
+   width: 40%;
+   height: 5vh;
+   margin-left: 0px !important;
+   align-items: center;
+   justify-content: center;
+   /* background: red; */
+}
+
+.btn_profile_list{
+  padding-left: 0px !important;
+  border: none;
+}
+
+
+#user_name_profile{
+  color: #023d51;
+  font-weight: 700;
+  font-size: medium;
+}
+
+#dropdown_profile{
+  
+}
+
+.dropdown-content {
+  
+  background: yellow;
+}
+
+.employer_profile_pic{
+    display: flex;
+    width: 37px;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    border: 5px solid #74DC68;
+    background: yellow;
+}
+
+
+/*====================== Modal Job Post Form ========================*/
+.modal-content {
+  color:#023d51
+  /* background-color: red; */
+}
+ 
+.modal-header h4{
+  color:#023d51;
+  margin-left: 35%;
+}
+
+.modal-body{
+ 
+}
+
+
+#jobPost_modalForm{
+    width: 100%;
+    height: 180vh;
+    padding: 5% 0 5% 2%;
+    /* background-color: red; */
+}
+
+#employee_details{
+  display: inline-block; 
+  width: 100%;
+}
+
+.names_box{
+  display: inline-flex;
+  width: 100%;
+}
+
+.fname_box{
+ text-align: center;  
+   margin-right: 3%;
+}
+
+.fname_input[value] {
+  margin-bottom: 3%;
+  color: red;
+
+}
+ 
+.address_box{
+  display: inline-flex;
+  width: 100%;
+}
+
+.email_box{
+  width: 60%;
+  margin-right: 2%;
+}
+ 
+.city_box{
+  width: 38%;
+}
+
+.other_details{
+  display: inline-flex;
+  width: 100%;
+  height: 110px !important;
+}
+
+.age_input{
+  width: 17%;
+  height: 45px;
+  margin-right: 5px;
+}
+
+.age_input::placeholder{
+  color: #023d51;
+}
+ 
+/* =======Gender Selection ============ */
+.gender{
+  width: 24%;
+  height: 45px;
+  margin-right: 5px;
+  color: #023d51;
+}
+/*================Marital Status ================= */
+ 
+.select1 {
+  width: fit-content;
+  cursor: pointer;
+  position: relative;
+  transition: 300ms;
+  color: #023d51;
+  overflow: hidden;
+
+  width: 30%;
+  margin-right: 5px;
+}
+
+.selected1 {
+  background-color: white;
+  padding: 5px;
+  margin-bottom: 3px;
+  border-radius: 5px;
+  position: relative;
+  height: 45px;
+  z-index: 100000;
+  font-size: 15px;
+  display: flex;
+  color: #023d51;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #DEE2E6;
+}
+
+.select1:hover{
+  width: 31%;
+}
+
+.selected1:hover{
+  border: 3px solid #A0D9DE;
+}
+
+.arrow1 {
+  position: relative;
+  right: 0px;
+  height: 10px;
+  transform: rotate(-90deg);
+  width: 25px;
+  fill: black;
+  z-index: 0;
+  transition: 300ms;
+}
+
+.options_b {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 5px;
+  color: #023d51;
+  background-color: white;
+  position: relative;
+  top: -100px;
+  opacity: 0;
+  transition: 300ms;
+  border: 1px solid #DEE2E6;
+}
+
+.select1:hover > .options_b {
+  opacity: 1;
+  top: 0;
+}
+
+.select1:hover > .selected1 .arrow1 {
+  transform: rotate(0deg);
+}
+
+.option1 {
+  border-radius: 5px;
+  padding: 5px;
+  transition: 300ms;
+  width: 150px;
+  font-size: 15px;
+}
+.option1:hover {
+  background-color: whitesmoke;
+}
+
+.options_b input[type="radio"] {
+  display: none;
+}
+
+.options_b label {
+  display: inline-block;
+}
+.options_b label::before {
+  content: attr(data-txt);
+}
+
+.options_b input[type="radio"]:checked + label {
+  display: none;
+}
+
+.options_b input[type="radio"]#all:checked + label {
+  display: none;
+}
+
+.select1:has(.options_b input[type="radio"]#marital-status:checked) .selected1::before {
+  content: attr(data-default);
+}
+
+.select1:has(.options_b input[type="radio"]#option-b2:checked) .selected1::before {
+  content: attr(data-one);
+}
+.select1:has(.options_b input[type="radio"]#option-b3:checked) .selected1::before {
+  content: attr(data-two);
+}
+
+/* ========= Family Size ========= */
+.family_size{
+  width: 27%;
+  height: 45px;
+}
+
+.family_size::placeholder{
+  color: #023d51;
+}
+
+/* ===================== Job description section================= */
+#job_description{
+  display: flex; 
+  flex-direction: column;
+  width: 100%;
+}
+
+.details-1{
+  display: block; 
+}
+
+.jobtitle-box{
+  width: 100%;
+  height: 40px !important;
+  max-height: max-content;
+  /* background-color: #74DC68; */
+}
+
+#job-title{
+  width: 100%;
+  height: 30px !important;
+  max-height: fit-content;
+  word-break: break-all; 
+}
+
+/* the dropdown option containing the counties */
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-top: 10%;
+}
+
+.dropdown-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dropdown-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  display: none;
+}
+
+.dropdown-options.show {
+  display: block;
+}
+
+.dropdown-option {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-option:hover {
+  background-color: #f0f0f0;
+}
+
+/* ============= Details 2 of the job description section ============== */
+.details-2{
+  display: flex; 
+  margin-top : 8%;
+}
+
+.job_contract{
+   width: 49%;
+   margin-right: 2%;
+}
+
+.job_contract::placeholder{
+  color: #023d51;
+}
+
+.job_salary{
+  width: 49%;
+}
+
+.job_salary::placeholder{
+  color: #023d51;
+}
+
+#job-content{
+  margin-top: 10%;
+  border-radius: 10px;
+  border-color: #DEE2E6;
+  outline-color: #DEE2E6;
+}
+
+#job-content::placeholder{
+  color: #023d51;
+  padding-left: 1%;
+}
+
+/*================== The job requirements section =================*/
+#job_requirements{
+  margin-top: 13%; 
+}
+
+.req_details1{
+  display: flex; 
+}
+
+.req_age{
+  width: 37%;
+  height: 45px;
+  color: #023d51;
+  margin-right: 5px;
+}
+ 
+.req_Gender{
+  width: 25%;
+  height: 45px;
+  margin-right: 5px;
+  color: #023d51;
+}
+ 
+.req_language{
+  width: 38%;
+  height: 45px;
+  color: #023d51;
+  margin-right: 5px;
+}
+ 
+.req_details2{
+  display: flex;
+  margin-top: 6%; 
+}
+
+.req_availabitily{
+  width: 43%;
+  height: 45px;
+  color: #023d51;
+  margin-right: 5px;
+}
+
+.req_experience{
+  width: 55%;
+  height: 45px;
+  color: #023d51;
+  margin-right: 5px;
+}
+
+.tagify_multiple-inputs{
+  margin: 15% 0 20% 0;
+  background: #d4e1e2;
+  border-radius: 4px;
+}
+
+.tagify_multiple-inputs p{
+  height:fit-content;
+  color:#023d51;
+  margin-left: 10px;
+}
+ 
+
+.customLook {
+  --tag-bg                  : #0052BF;
+  --tag-hover               : #CE0078;
+  --tag-text-color          : #FFF;
+  --tags-border-color       : silver;
+  --tag-text-color--edit    : #111;
+  --tag-remove-bg           : var(--tag-hover);
+  --tag-pad                 : .6em 1em;
+  --tag-inset-shadow-size   : 1.4em; /* compensate for the larger --tag-pad value */
+  --tag-remove-btn-color    : white;
+  --tag-remove-btn-bg--hover: black;
+
+  display: inline-block;
+  min-width: 0;
+  border: none;
+}
+
+.customLook .tagify__tag {
+  margin-top: 0;
+}
+
+.customLook .tagify__tag> div {
+  border-radius: 10px;
+}
+
+.customLook .tagify__tag:not(:only-of-type):not(.tagify__tag--editable):hover .tagify__tag-text {
+  margin-inline-end: -1px;
+}
+
+/* Do not show the "remove tag" (x) button when only a single tag remains */
+.customLook .tagify__tag:only-of-type .tagify__tag__removeBtn {
+  display: none;
+}
+
+.customLook .tagify__tag__removeBtn {
+  opacity: 0;
+  transform: translateX(-100%) scale(.5);
+  margin-inline: -20px 6px;
+  /* very specific on purpose  */
+  text-align: right;
+  transition: .12s;
+}
+
+.customLook .tagify__tag:not(.tagify__tag--editable):hover .tagify__tag__removeBtn {
+  transform: none;
+  opacity: 1;
+}
+
+.customLook+button {
+  color: #0052BF;
+  font: bold 1.4em/1.65 Arial;
+  border: 0;
+  background: none;
+  box-shadow: 0 0 0 2px inset currentColor;
+  border-radius: 50%;
+  width: 1.65em;
+  height: 1.65em;
+  cursor: pointer;
+  outline: none;
+  transition: .1s ease-out;
+  margin: 0 0 0 5px;
+  vertical-align: top;
+}
+
+.customLook+button:hover {
+  box-shadow: 0 0 0 5px inset currentColor;
+}
+
+.customLook .tagify__input {
+  display: none;
+}
+
+
+/* =================================Posted Job Section ========================== */
+#posted_jobs{
+  width: 100%;
+  height: 100vh
+}
+
+.jobadvert-box {
+  width: 100% !important;  
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(300deg, #00bfff, #81DF7B);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  z-index: -1; /* Add z-index for stacking order */
+}
+
+@keyframes gradient-animation {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.jobadvert-box::before 
+ {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height:300px;  
+  background: linear-gradient(to top, #F3FAFA, transparent);
+  z-index: -1;    
+}
+
+.jobadvert-box::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #F3FAFA;
+  z-index: -1; 
+}
+ 
+
+
+.jobadvert-box1{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100vh;
+  background: transparent;
+  margin-top: 10%;
+  /* background: #74DC68; */
+}
+
+.user_name{
+  display: flex;
+  width: 100%;
+  height: 100px;
+  margin: 4% 0 4% 0; 
+  padding: 0 0 0 6%;
+  /* background: #00bfff; */
+}
+
+#user_initials{
+  width: 80px;
+  height: 10vh;
+  text-align: center;
+  align-content: center;
+  border-radius: 100%;
+  border: 2px solid #00bfff;
+  /* background: #00bfff; */
+}
+
+.user_name h3{
+  margin-top: 1.5%;
+  margin-left: 1.5%;
+  text-decoration: underline;
+}
+
+.jobs-posted{
+    max-width: 76%;
+    height: 100vh;
+    margin: 50px auto;
+    
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.jobadvert-dialog{
+  width: 100%;
+  height:  150px;
+  padding: 0 0 0 0;
+  margin: 0 0 2% 0;
+  border-radius: 10px;
+  background-color: #023d51;
+ 
+}
+
+.jobadvert-innerdialog{
+  display: flex ;
+  width: 99%;
+  height: 100%;
+  margin: 0 0 0 1%;
+  padding: 2% 0 0 0;
+  border-top-right-radius: 10px;
+  background: white; 
+}
+
+.jobadvert-innerdialog:hover{
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.jobtitle-head{
+  width: 78% !important; 
+  padding: 0 0 0 10%;
+  /* background: green; */
+}
+
+.date-jobposted{
+  display: flex;
+  width: 28%;
+  padding: 0 0 0 2%;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 10px;
+  /* background: red; */
+}
+
+.job-title{
+    color: #023d51;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration:none !important;
+    
+}
+
+.jobview-names{
+  color: #023d51;
+  text-decoration:none !important;
+}
+
+.jobview-contract{
+  display: inline-block;
+  color: #023d51;
+  margin: 0 5% 0 0;
+}
+
+.jobview-location{
+  display: inline-block;
+  color: #023d51;
+  margin: 0 5% 0 0;
+}
+
+.jobview-timeposted{  
+  color: #023d51;
+  text-decoration:none !important;
+}
