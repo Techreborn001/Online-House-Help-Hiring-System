@@ -38,7 +38,7 @@ const pool = new Pool({
 
 
 app.get("/Landing_Page", async (req, res) => {
-  res.render("Landing_Page");
+  res.render("index");
 });
 
 
@@ -188,7 +188,7 @@ app.post('/sign_in', async (req, res) =>{
 });
 
 app.post("/post-job",async (req, res) =>{
-  
+
 });
 
   
